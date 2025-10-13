@@ -1,0 +1,82 @@
+site_name: Training Video Generator
+site_description: Automated training video creation from documentation with AI-generated scripts, terminal automation, and TTS narration
+site_url: https://thejimbirch.github.io/training-video-generator/
+repo_url: https://github.com/thejimbirch/training-video-generator
+repo_name: thejimbirch/training-video-generator
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - Quick Start: quick-start.md
+  - Commands:
+    - Overview: commands/overview.md
+    - Video Topics: commands/video-topics.md
+    - Video Script: commands/video-script.md
+    - Video Automate: commands/video-automate.md
+    - Video Narrate: commands/video-narrate.md
+    - Video Merge: commands/video-merge.md
+  - Guides:
+    - Workflow: guides/workflow.md
+    - Beat Sheets: guides/beat-sheets.md
+    - Customization: guides/customization.md
+    - Troubleshooting: guides/troubleshooting.md
+  - Examples:
+    - Sample Video: examples/sample-video.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/thejimbirch/training-video-generator
+  generator: false
+
+copyright: Copyright &copy; 2025 Jim Birch
