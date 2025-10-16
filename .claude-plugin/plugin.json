@@ -23,7 +23,6 @@
     "elevenlabs",
     "openai"
   ],
-    "repository": "https://github.com/kanopi/training-video-generator",
-    "homepage": "https://kanopi.github.io/training-video-generator/"
-  }
+  "repository": "https://github.com/kanopi/training-video-generator",
+  "homepage": "https://kanopi.github.io/training-video-generator/"
 }
