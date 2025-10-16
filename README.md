@@ -1,7 +1,7 @@
 # Training Video Generator
 
 ![Maintained](https://img.shields.io/maintenance/yes/2025.svg)
-[![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://thejimbirch.github.io/training-video-generator/)
+[![Documentation](https://img.shields.io/badge/docs-mkdocs-blue.svg)](https://kanopi.github.io/training-video-generator/)
 
 **Training Video Generator** is a Claude Code plugin that automates the creation of professional training videos from project documentation. Generate AI-powered scripts, automate screen recordings, create TTS narration, and merge everything into polished training videos for any project.
 
@@ -9,16 +9,16 @@
 
 ## 📚 Documentation
 
-**Complete documentation is available at:** **[https://thejimbirch.github.io/training-video-generator/](https://thejimbirch.github.io/training-video-generator/)**
+**Complete documentation is available at:** **[https://kanopi.github.io/training-video-generator/](https://kanopi.github.io/training-video-generator/)**
 
 ### Quick Links
 
 | Resource | Description |
 |----------|-------------|
-| **[Installation](https://thejimbirch.github.io/training-video-generator/installation/)** | Get started in minutes |
-| **[Quick Start](https://thejimbirch.github.io/training-video-generator/quick-start/)** | Your first video walkthrough |
-| **[Commands](https://thejimbirch.github.io/training-video-generator/commands/overview/)** | Complete command reference (5 commands) |
-| **[Guides](https://thejimbirch.github.io/training-video-generator/guides/workflow/)** | Workflows, beat sheets, customization |
+| **[Installation](https://kanopi.github.io/training-video-generator/installation/)** | Get started in minutes |
+| **[Quick Start](https://kanopi.github.io/training-video-generator/quick-start/)** | Your first video walkthrough |
+| **[Commands](https://kanopi.github.io/training-video-generator/commands/overview/)** | Complete command reference (5 commands) |
+| **[Guides](https://kanopi.github.io/training-video-generator/guides/workflow/)** | Workflows, beat sheets, customization |
 
 ---
 
@@ -39,27 +39,11 @@
 **Recommended: Via Marketplace**
 ```bash
 # Add the marketplace
-claude plugins marketplace add thejimbirch-plugins https://github.com/thejimbirch/claude-plugins
+/plugin marketplace add kanopi/claude-toolbox
 
 # Install Training Video Generator
-claude plugins install thejimbirch-plugins/training-video-generator
+/plugins install training-video-generator@claude-toolbox
 ```
-
-**Alternative: Direct Install**
-```bash
-claude plugins install https://github.com/thejimbirch/training-video-generator
-```
-
-**Manual Installation (Development)**
-```bash
-cd ~/.claude/plugins
-git clone https://github.com/thejimbirch/training-video-generator.git
-claude plugins enable training-video-generator
-```
-
-See [Installation Guide](https://thejimbirch.github.io/training-video-generator/installation/) for detailed setup including TTS API configuration.
-
----
 
 ## 💡 Quick Example
 
