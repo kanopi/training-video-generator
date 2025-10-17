@@ -443,4 +443,4 @@ Now that you've created your first video, explore more:
 
 ---
 
-**Need Help?** [Check Troubleshooting Guide](guides/troubleshooting.md) or [Open an Issue](https://github.com/thejimbirch/training-video-generator/issues)
+**Need Help?** [Check Troubleshooting Guide](guides/troubleshooting.md) or [Open an Issue](https://github.com/kanopi/training-video-generator/issues)

@@ -36,13 +36,13 @@ This is the easiest method and enables automatic updates. **Installs globally fo
 #### Step 1: Add the Marketplace
 
 ```bash
-claude plugins marketplace add thejimbirch-plugins https://github.com/thejimbirch/claude-plugins
+claude plugins marketplace add kanopi-plugins https://github.com/kanopi/claude-plugins
 ```
 
 #### Step 2: Install Training Video Generator
 
 ```bash
-claude plugins install thejimbirch-plugins/training-video-generator
+claude plugins install kanopi-plugins/training-video-generator
 ```
 
 #### Step 3: Verify Installation
@@ -56,7 +56,7 @@ You should see `training-video-generator` in the list of installed plugins.
 #### Updating Via Marketplace
 
 ```bash
-claude plugins update thejimbirch-plugins/training-video-generator
+claude plugins update kanopi-plugins/training-video-generator
 ```
 
 ---
@@ -66,7 +66,7 @@ claude plugins update thejimbirch-plugins/training-video-generator
 Install directly without adding a marketplace. **Installs globally for all projects.**
 
 ```bash
-claude plugins install https://github.com/thejimbirch/training-video-generator
+claude plugins install https://github.com/kanopi/training-video-generator
 ```
 
 #### Updating Direct Installation
@@ -85,7 +85,7 @@ For plugin development or testing local changes. **Installs globally for all pro
 
 ```bash
 cd ~/.claude/plugins
-git clone https://github.com/thejimbirch/training-video-generator.git
+git clone https://github.com/kanopi/training-video-generator.git
 ```
 
 !!! note "Plugin Directory Location"
@@ -377,7 +377,7 @@ git status
 ### Remove from Marketplace
 
 ```bash
-claude plugins uninstall thejimbirch-plugins/training-video-generator
+claude plugins uninstall kanopi-plugins/training-video-generator
 ```
 
 ### Remove Manual Installation
@@ -405,5 +405,5 @@ rm -rf .training-video-generator
 ---
 
 **Installation Support:**
-- **Issues**: [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues)
-- **Repository**: [GitHub](https://github.com/thejimbirch/training-video-generator)
+- **Issues**: [GitHub Issues](https://github.com/kanopi/training-video-generator/issues)
+- **Repository**: [GitHub](https://github.com/kanopi/training-video-generator)

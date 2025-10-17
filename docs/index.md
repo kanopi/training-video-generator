@@ -73,7 +73,7 @@ Get started in minutes:
 
 ```bash
 # 1. Install the plugin
-claude plugins install https://github.com/thejimbirch/training-video-generator
+claude plugins install https://github.com/kanopi/training-video-generator
 
 # 2. Analyze your project
 /video-topics
@@ -256,8 +256,8 @@ end tell
 
 ## Support & Contributing
 
-- **Issues**: [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues)
-- **Source**: [GitHub Repository](https://github.com/thejimbirch/training-video-generator)
+- **Issues**: [GitHub Issues](https://github.com/kanopi/training-video-generator/issues)
+- **Source**: [GitHub Repository](https://github.com/kanopi/training-video-generator)
 - **License**: GPL-2.0-or-later
 
 ---
