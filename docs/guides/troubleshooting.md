@@ -615,13 +615,13 @@ If you're still stuck after trying these solutions:
 
 ### 2. Search GitHub Issues
 
-Visit [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues) and search for your problem.
+Visit [GitHub Issues](https://github.com/kanopi/training-video-generator/issues) and search for your problem.
 
 ### 3. Create New Issue
 
 If your problem isn't documented:
 
-1. Go to [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues/new)
+1. Go to [GitHub Issues](https://github.com/kanopi/training-video-generator/issues/new)
 2. Include:
    - Operating system and version
    - Plugin version

@@ -1,0 +1,23 @@
+{
+  "tts": {
+    "provider": "openai",
+    "voice": "alloy",
+    "model": "tts-1",
+    "api_key_env": "OPENAI_API_KEY",
+    "fallback": "macos-say",
+    "macos_voice": "Samantha"
+  },
+  "recording": {
+    "screen_size": "1920x1080",
+    "frame_rate": 30
+  },
+  "output": {
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "quality": "high"
+  },
+  "branding": {
+    "intro_video": null,
+    "outro_video": null
+  }
+}

@@ -29,8 +29,10 @@ Read the beat sheet and extract:
 - Beat numbers and names
 - Duration for each beat
 - Terminal commands from code blocks
-- Browser actions
+- Browser actions (note if iTerm2 browser plugin is being used)
 - Visual timing cues
+
+**iTerm2 Browser Plugin Support**: If the beat sheet includes browser actions and mentions using iTerm2's browser plugin, note this in the automation script. The browser plugin allows web browsing directly in iTerm2, perfect for showing both CLI and web UI in the same window. Learn more: https://iterm2.com/browser-plugin.html
 
 ## Step 2: Generate AppleScript
 
@@ -115,7 +117,8 @@ Create JSON file with timing data:
 Save generated files to:
 ```
 scripts/automation/
-├── [topic]-automate.scpt       # Main AppleScript
+├── [topic]-record.sh           # Main recording wrapper (run this!)
+├── [topic]-automate.scpt       # AppleScript automation
 ├── [topic]-commands.sh         # Bash reference
 └── [topic]-timing.json         # Timing data
 ```
@@ -155,15 +158,80 @@ end tell
 
 ## Usage Instructions
 
-Generate usage instructions in the automation script comments:
+The command should generate **FOUR files**:
 
-```applescript
--- USAGE INSTRUCTIONS
--- 1. Start screen recording (Cmd+Shift+5)
--- 2. Run this script: osascript [topic]-automate.scpt
--- 3. Script will execute all commands automatically
--- 4. Stop recording when complete
--- 5. Save as: recordings/[topic].mov
+1. **[topic]-record.sh** - Main wrapper script (uses recording-script.sh template)
+   - Starts FFmpeg screen recording automatically
+   - Runs the AppleScript automation
+   - Stops recording when complete
+   - Ensures perfect sync between video and audio
+
+2. **[topic]-automate.scpt** - AppleScript automation (uses applescript-template.scpt)
+   - Executes terminal commands
+   - Controls iTerm2 window
+   - Timing matches beat sheet durations
+
+3. **[topic]-commands.sh** - Human-readable command reference
+   - Lists all commands in order
+   - Includes narration text
+   - Useful for manual review
+
+4. **[topic]-timing.json** - Machine-readable timing data
+   - Beat durations
+   - Command sequences
+   - Used by merge script
+
+### Generation Process
+
+1. **Parse beat sheet** to extract:
+   - Beat numbers, names, durations
+   - Terminal commands
+   - Total video duration
+
+2. **Generate recording wrapper** (from recording-script.sh template):
+   - Replace `{{TOPIC}}` with topic name
+   - Replace `{{DURATION}}` with total duration in minutes
+   - Save as `scripts/automation/[topic]-record.sh`
+   - Make executable: `chmod +x`
+
+3. **Generate AppleScript** (from applescript-template.scpt):
+   - Parse beat sheet commands
+   - Calculate delays between commands
+   - Save as `scripts/automation/[topic]-automate.scpt`
+   - Make executable: `chmod +x`
+
+4. **Generate command reference** (bash script format):
+   - List beats with narration
+   - Show commands in order
+   - Save as `scripts/automation/[topic]-commands.sh`
+
+5. **Generate timing JSON**:
+   - Extract beat timing data
+   - Save as `scripts/automation/[topic]-timing.json`
+
+### Success Message
+
+Show user what was generated and how to use it:
+
+```
+✅ Automation scripts generated!
+
+Files created:
+  - scripts/automation/[topic]-record.sh     (main recording wrapper)
+  - scripts/automation/[topic]-automate.scpt (AppleScript automation)
+  - scripts/automation/[topic]-commands.sh   (command reference)
+  - scripts/automation/[topic]-timing.json   (timing data)
+
+To record your video:
+  bash scripts/automation/[topic]-record.sh
+
+This will:
+  1. Start screen recording automatically (FFmpeg)
+  2. Run terminal automation (AppleScript)
+  3. Stop recording when complete
+  4. Save to: recordings/[topic].mov
+
+The recording will be perfectly synced with your audio narration!
 ```
 
 Complete generation with success message showing file locations.

@@ -1,7 +1,7 @@
 ---
 description: Analyze project documentation and suggest video topics
 argument-hint: [focus]
-allowed-tools: Read, Glob, Grep
+allowed-tools: Read, Glob, Grep, Write
 ---
 
 # Video Topics Generator
@@ -98,9 +98,11 @@ Clear, descriptive title (e.g., "Installation and Setup on macOS")
 - **Advanced**: Experienced users, developers
 
 ### 3. Estimated Duration
-- **Short**: 3-5 minutes
-- **Medium**: 5-8 minutes
-- **Long**: 8-12 minutes
+- **Short**: 3-5 minutes (most videos should be this)
+- **Medium**: 5-7 minutes (for complex topics)
+- **Long**: 8-10 minutes (only when absolutely necessary)
+
+**Note**: Favor shorter, focused videos. Most should be under 5 minutes.
 
 ### 4. Key Points to Cover
 List 4-6 main points that should be covered in the video
@@ -110,6 +112,17 @@ What the viewer needs to know or have installed
 
 ### 6. Demo Materials
 What files, data, or setup is needed for the demo
+
+## Step 4: Save Output to File
+
+**IMPORTANT**: Save the output to a file so `/video-script` can reference it later.
+
+Save to:
+```
+scripts/video-scripts/video-topics-suggestions.md
+```
+
+Create the `scripts/video-scripts/` directory if it doesn't exist.
 
 ## Output Format
 
@@ -190,10 +203,12 @@ If user provides a focus parameter, filter topics to that category:
 - Consider common pain points and questions
 
 ### Duration Estimation
-- Installation/setup: Usually 5-8 minutes
-- Feature demos: Usually 3-5 minutes per feature
-- Workflows: Usually 8-12 minutes
-- API/advanced: Usually 10-15 minutes
+- Installation/setup: Usually 4-5 minutes
+- Feature demos: Usually 3-4 minutes per feature
+- Workflows: Usually 5-7 minutes
+- API/advanced: Usually 6-8 minutes
+
+**Key principle**: Keep videos concise. If a topic needs more than 8 minutes, consider splitting it into multiple videos.
 
 ### Key Points
 - Limit to 4-6 points per video
@@ -241,3 +256,20 @@ If analyzing a web framework project, you might suggest:
 - Balance breadth (overview) with depth (detailed)
 
 Remember: The goal is to help users understand and use the project effectively. Suggest topics that provide real value and follow a natural learning progression.
+
+## Final Step: Completion Message
+
+After saving the file, display a success message:
+
+```
+✅ Video topic suggestions saved!
+
+Location: scripts/video-scripts/video-topics-suggestions.md
+
+📝 Next Steps:
+1. Review the suggested topics
+2. Choose a topic to create first
+3. Run: /video-script [topic-name]
+
+The /video-script command will automatically reference these suggestions.
+```

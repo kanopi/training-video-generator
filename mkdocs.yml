@@ -1,8 +1,8 @@
 site_name: Training Video Generator
 site_description: Automated training video creation from documentation with AI-generated scripts, terminal automation, and TTS narration
-site_url: https://thejimbirch.github.io/training-video-generator/
-repo_url: https://github.com/thejimbirch/training-video-generator
-repo_name: thejimbirch/training-video-generator
+site_url: https://kanopi.github.io/training-video-generator/
+repo_url: https://github.com/kanopi/training-video-generator
+repo_name: kanopi/training-video-generator
 
 theme:
   name: material
@@ -76,7 +76,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/thejimbirch/training-video-generator
+      link: https://github.com/kanopi/training-video-generator
   generator: false
 
 copyright: Copyright &copy; 2025 Jim Birch

@@ -19,7 +19,7 @@ This example demonstrates:
 
 ## The Complete Beat Sheet
 
-For the full beat sheet, see: [`examples/sample-beat-sheet.md`](https://github.com/thejimbirch/training-video-generator/blob/main/examples/sample-beat-sheet.md) in the repository.
+For the full beat sheet, see: [`examples/sample-beat-sheet.md`](https://github.com/kanopi/training-video-generator/blob/main/examples/sample-beat-sheet.md) in the repository.
 
 ## Beat Breakdown Analysis
 

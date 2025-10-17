@@ -15,7 +15,22 @@ You are a professional video script writer. Create a detailed, screenplay-style 
 2. Generate TTS narration (narration text will be converted to speech)
 3. Produce the final video (merging recording + narration)
 
-## Step 1: Understand the Topic
+## Step 1: Check for Video Topics Analysis
+
+**IMPORTANT**: First check if the user has already run `/video-topics`. Look for:
+```
+scripts/video-scripts/video-topics-suggestions.md
+```
+
+If this file exists:
+1. **Read it first** to understand the suggested topics
+2. **Find the matching topic** the user is requesting
+3. **Use the key points** listed in that topic as your outline
+4. **Follow the estimated duration** suggested in the analysis
+
+This ensures your beat sheet matches what was already analyzed and approved.
+
+## Step 2: Understand the Topic
 
 The user will provide a topic like:
 - "Installation and Setup"
@@ -23,13 +38,15 @@ The user will provide a topic like:
 - "Advanced Configuration"
 - "API Integration Tutorial"
 
-Read relevant project documentation to understand:
+If you found the topic in video-topics-suggestions.md, use that as your guide.
+
+Otherwise, read relevant project documentation to understand:
 - What needs to be demonstrated
 - What commands need to be run
 - What the expected outcomes are
 - Common pain points or gotchas
 
-## Step 2: Plan the Video Structure
+## Step 3: Plan the Video Structure
 
 A well-structured video has:
 
@@ -51,9 +68,12 @@ A well-structured video has:
 - Call to action
 - Duration: 10-20 seconds
 
-**Total video duration**: Aim for 3-10 minutes (8-20 beats)
+**Total video duration**: Target 3-5 minutes (6-12 beats)
+- Most videos should be under 5 minutes
+- Complex topics can go up to 8 minutes
+- Always favor concise, focused content
 
-## Step 3: Write Each Beat
+## Step 4: Write Each Beat
 
 For each beat, provide:
 
@@ -110,6 +130,14 @@ If applicable:
 
 Or `- N/A` if no browser actions.
 
+**iTerm2 Browser Plugin**: iTerm2 supports an optional browser plugin that allows web browsing directly in the terminal. This is perfect for training videos showing both CLI and web interfaces in the same window. Learn more: https://iterm2.com/browser-plugin.html
+
+When using the browser plugin:
+- URL navigation happens in the same iTerm2 window
+- No need to switch between terminal and browser
+- Keeps video focused and professional
+- Viewer sees everything in one place
+
 ### Visual Notes
 Camera/recording notes:
 
@@ -120,7 +148,7 @@ Camera/recording notes:
 - Pause on important messages
 ```
 
-## Step 4: Generate Complete Beat Sheet
+## Step 5: Generate Complete Beat Sheet
 
 Use this template structure:
 
@@ -329,12 +357,14 @@ Use kebab-case for the filename (e.g., `installation-and-setup-beat-sheet.md`).
 ## Before Finishing
 
 Review your beat sheet:
-- [ ] Total duration is 3-10 minutes
+- [ ] Total duration is 3-5 minutes (under 5 minutes ideal)
+- [ ] If from `/video-topics`, matches the suggested key points
 - [ ] Each beat has all required fields
 - [ ] Narration is natural and conversational
 - [ ] Commands are correct and tested
 - [ ] Timing is realistic
 - [ ] Progression is logical
 - [ ] Conclusion ties it together
+- [ ] Video is focused and concise (not trying to cover too much)
 
 Remember: This beat sheet will be used to automatically generate narration and automation scripts, so accuracy and completeness are critical!

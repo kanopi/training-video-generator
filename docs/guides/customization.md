@@ -107,19 +107,19 @@ project/
 ```json
 {
   "video": {
-    "defaultDuration": 7,
+    "defaultDuration": 4,
     "introDuration": 15,
     "conclusionDuration": 20,
-    "beatDurationRange": [20, 60]
+    "beatDurationRange": [20, 45]
   }
 }
 ```
 
 **Explanation**:
-- `defaultDuration`: Target video length in minutes
+- `defaultDuration`: Target video length in minutes (most videos should be 3-5 minutes)
 - `introDuration`: Intro beat duration in seconds
 - `conclusionDuration`: Conclusion beat duration in seconds
-- `beatDurationRange`: Min/max beat duration [min, max]
+- `beatDurationRange`: Min/max beat duration [min, max] in seconds
 
 ### Target Audience
 

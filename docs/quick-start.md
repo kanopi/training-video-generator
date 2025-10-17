@@ -389,6 +389,12 @@ Here's the full command sequence:
 - Use a fresh terminal window
 - Clear command history if needed
 
+### 6. Use iTerm2 Browser Plugin
+- Install the browser plugin for showing web UIs
+- Keeps CLI and browser in one window
+- Makes videos more professional
+- See [Installation Guide](installation.md#iterm2-browser-plugin-highly-recommended)
+
 ---
 
 ## Next Steps
@@ -443,4 +449,4 @@ Now that you've created your first video, explore more:
 
 ---
 
-**Need Help?** [Check Troubleshooting Guide](guides/troubleshooting.md) or [Open an Issue](https://github.com/thejimbirch/training-video-generator/issues)
+**Need Help?** [Check Troubleshooting Guide](guides/troubleshooting.md) or [Open an Issue](https://github.com/kanopi/training-video-generator/issues)

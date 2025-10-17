@@ -36,13 +36,13 @@ This is the easiest method and enables automatic updates. **Installs globally fo
 #### Step 1: Add the Marketplace
 
 ```bash
-claude plugins marketplace add thejimbirch-plugins https://github.com/thejimbirch/claude-plugins
+claude plugins marketplace add kanopi-plugins https://github.com/kanopi/claude-plugins
 ```
 
 #### Step 2: Install Training Video Generator
 
 ```bash
-claude plugins install thejimbirch-plugins/training-video-generator
+claude plugins install kanopi-plugins/training-video-generator
 ```
 
 #### Step 3: Verify Installation
@@ -56,7 +56,7 @@ You should see `training-video-generator` in the list of installed plugins.
 #### Updating Via Marketplace
 
 ```bash
-claude plugins update thejimbirch-plugins/training-video-generator
+claude plugins update kanopi-plugins/training-video-generator
 ```
 
 ---
@@ -66,7 +66,7 @@ claude plugins update thejimbirch-plugins/training-video-generator
 Install directly without adding a marketplace. **Installs globally for all projects.**
 
 ```bash
-claude plugins install https://github.com/thejimbirch/training-video-generator
+claude plugins install https://github.com/kanopi/training-video-generator
 ```
 
 #### Updating Direct Installation
@@ -85,7 +85,7 @@ For plugin development or testing local changes. **Installs globally for all pro
 
 ```bash
 cd ~/.claude/plugins
-git clone https://github.com/thejimbirch/training-video-generator.git
+git clone https://github.com/kanopi/training-video-generator.git
 ```
 
 !!! note "Plugin Directory Location"
@@ -271,6 +271,36 @@ Enable Python API in iTerm2:
 2. Go to "General" > "Magic"
 3. Enable "Python API"
 
+### iTerm2 Browser Plugin (Highly Recommended)
+
+**Game-changer for training videos!** iTerm2 has an optional browser plugin that allows web browsing directly in the terminal window.
+
+**Why this is amazing:**
+- Show CLI and web UI in the **same window**
+- No switching between terminal and browser
+- Keeps videos focused and professional
+- Perfect for full-stack tutorials
+
+**Installation:**
+1. Visit [iterm2.com/browser-plugin.html](https://iterm2.com/browser-plugin.html)
+2. Follow the installation instructions
+3. Use in your beat sheets by specifying browser actions
+
+**Example use case:**
+```markdown
+## Beat 3: Start Development Server
+**Terminal Commands**:
+```bash
+npm run dev
+```
+
+**Browser Actions** (using iTerm2 browser plugin):
+- Open http://localhost:3000 in iTerm2 browser pane
+- Show application running
+```
+
+This keeps everything in one frame, making your training videos much more professional!
+
 ---
 
 ## Optional: ScreenFlow Setup (macOS)
@@ -377,7 +407,7 @@ git status
 ### Remove from Marketplace
 
 ```bash
-claude plugins uninstall thejimbirch-plugins/training-video-generator
+claude plugins uninstall kanopi-plugins/training-video-generator
 ```
 
 ### Remove Manual Installation
@@ -405,5 +435,5 @@ rm -rf .training-video-generator
 ---
 
 **Installation Support:**
-- **Issues**: [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues)
-- **Repository**: [GitHub](https://github.com/thejimbirch/training-video-generator)
+- **Issues**: [GitHub Issues](https://github.com/kanopi/training-video-generator/issues)
+- **Repository**: [GitHub](https://github.com/kanopi/training-video-generator)

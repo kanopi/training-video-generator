@@ -429,4 +429,4 @@ After your first video, you'll get faster:
 
 - Check [Troubleshooting Guide](troubleshooting.md)
 - Review [Command Documentation](../commands/overview.md)
-- Visit [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues)
+- Visit [GitHub Issues](https://github.com/kanopi/training-video-generator/issues)

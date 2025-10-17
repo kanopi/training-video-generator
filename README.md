@@ -174,7 +174,7 @@ Training Video Generator supports multiple TTS providers:
 
 ## 📖 Learn More
 
-Visit the **[complete documentation](https://thejimbirch.github.io/training-video-generator/)** for:
+Visit the **[complete documentation](https://kanopi.github.io/training-video-generator/)** for:
 
 - Detailed command reference
 - Step-by-step workflows
@@ -187,7 +187,7 @@ Visit the **[complete documentation](https://thejimbirch.github.io/training-vide
 
 ## 🤝 Contributing
 
-Contributions welcome! See [Contributing Guide](https://thejimbirch.github.io/training-video-generator/contributing/) for details.
+Contributions welcome! See [Contributing Guide](https://kanopi.github.io/training-video-generator/contributing/) for details.
 
 ---
 
@@ -199,9 +199,5 @@ GPL-2.0-or-later - see [LICENSE.md](LICENSE.md) file for details.
 
 ## 💬 Support
 
-- **Issues**: [GitHub Issues](https://github.com/thejimbirch/training-video-generator/issues)
-- **Documentation**: [https://thejimbirch.github.io/training-video-generator/](https://thejimbirch.github.io/training-video-generator/)
-
----
-
-**Created and maintained by [Jim Birch](https://thejimbirch.com)**
+- **Issues**: [GitHub Issues](https://github.com/kanopi/training-video-generator/issues)
+- **Documentation**: [https://kanopi.github.io/training-video-generator/](https://kanopi.github.io/training-video-generator/)
