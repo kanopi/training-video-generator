@@ -130,6 +130,14 @@ If applicable:
 
 Or `- N/A` if no browser actions.
 
+**iTerm2 Browser Plugin**: iTerm2 supports an optional browser plugin that allows web browsing directly in the terminal. This is perfect for training videos showing both CLI and web interfaces in the same window. Learn more: https://iterm2.com/browser-plugin.html
+
+When using the browser plugin:
+- URL navigation happens in the same iTerm2 window
+- No need to switch between terminal and browser
+- Keeps video focused and professional
+- Viewer sees everything in one place
+
 ### Visual Notes
 Camera/recording notes:
 

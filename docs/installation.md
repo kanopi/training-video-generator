@@ -271,6 +271,36 @@ Enable Python API in iTerm2:
 2. Go to "General" > "Magic"
 3. Enable "Python API"
 
+### iTerm2 Browser Plugin (Highly Recommended)
+
+**Game-changer for training videos!** iTerm2 has an optional browser plugin that allows web browsing directly in the terminal window.
+
+**Why this is amazing:**
+- Show CLI and web UI in the **same window**
+- No switching between terminal and browser
+- Keeps videos focused and professional
+- Perfect for full-stack tutorials
+
+**Installation:**
+1. Visit [iterm2.com/browser-plugin.html](https://iterm2.com/browser-plugin.html)
+2. Follow the installation instructions
+3. Use in your beat sheets by specifying browser actions
+
+**Example use case:**
+```markdown
+## Beat 3: Start Development Server
+**Terminal Commands**:
+```bash
+npm run dev
+```
+
+**Browser Actions** (using iTerm2 browser plugin):
+- Open http://localhost:3000 in iTerm2 browser pane
+- Show application running
+```
+
+This keeps everything in one frame, making your training videos much more professional!
+
 ---
 
 ## Optional: ScreenFlow Setup (macOS)

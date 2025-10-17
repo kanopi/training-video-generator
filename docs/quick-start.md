@@ -389,6 +389,12 @@ Here's the full command sequence:
 - Use a fresh terminal window
 - Clear command history if needed
 
+### 6. Use iTerm2 Browser Plugin
+- Install the browser plugin for showing web UIs
+- Keeps CLI and browser in one window
+- Makes videos more professional
+- See [Installation Guide](installation.md#iterm2-browser-plugin-highly-recommended)
+
 ---
 
 ## Next Steps

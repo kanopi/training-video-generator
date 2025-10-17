@@ -29,8 +29,10 @@ Read the beat sheet and extract:
 - Beat numbers and names
 - Duration for each beat
 - Terminal commands from code blocks
-- Browser actions
+- Browser actions (note if iTerm2 browser plugin is being used)
 - Visual timing cues
+
+**iTerm2 Browser Plugin Support**: If the beat sheet includes browser actions and mentions using iTerm2's browser plugin, note this in the automation script. The browser plugin allows web browsing directly in iTerm2, perfect for showing both CLI and web UI in the same window. Learn more: https://iterm2.com/browser-plugin.html
 
 ## Step 2: Generate AppleScript
 
